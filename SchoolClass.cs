@@ -30,5 +30,36 @@ namespace SchoolLib
 
             return sb.ToString();
         }
+
+        public override bool Equals(object obj)
+        {
+            if(obj == null)
+                return false;
+
+            if(obj.GetType() != this.GetType())
+                return false;
+
+            if(this == obj)
+                return true;
+
+            SchoolClass other = (SchoolClass) obj;
+
+            if(other.Name == this.Name && other.Teacher.Equals(this.Teacher)
+               && other.Students.SequenceEqual(this.Students))
+                return true;
+
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            int hash = 17;
+
+            hash = hash * 3 + Teacher.GetHashCode();
+            hash = hash * 3 + Students.GetHashCode();
+            hash = hash * 3 + Name.GetHashCode();
+
+            return hash;    
+        }
     }
 }
