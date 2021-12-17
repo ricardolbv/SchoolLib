@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolLib", "SchoolLib.csproj", "{2630ED1F-4DB2-4976-A243-BE79BB1C1666}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolLib", "SchoolLib.csproj", "{2630ED1F-4DB2-4976-A243-BE79BB1C1666}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolExec", "..\SchoolExec\SchoolExec.csproj", "{71BE256F-5858-417E-97B9-E36EBF64652A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolExec", "..\SchoolExec\SchoolExec.csproj", "{71BE256F-5858-417E-97B9-E36EBF64652A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolTest", "..\SchoolTest\SchoolTest.csproj", "{913C4771-3CC9-48AA-8939-B6348F6FD766}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{71BE256F-5858-417E-97B9-E36EBF64652A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71BE256F-5858-417E-97B9-E36EBF64652A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71BE256F-5858-417E-97B9-E36EBF64652A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{913C4771-3CC9-48AA-8939-B6348F6FD766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913C4771-3CC9-48AA-8939-B6348F6FD766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913C4771-3CC9-48AA-8939-B6348F6FD766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913C4771-3CC9-48AA-8939-B6348F6FD766}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

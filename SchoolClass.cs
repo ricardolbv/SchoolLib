@@ -13,6 +13,8 @@ namespace SchoolLib
         private List<Student> Students { get; set; } = new List<Student>();
         public void registerStudent(Student newStudent) => Students.Add(newStudent);
 
+        
+        public int countStudents() => Students.Count();
         public override string ToString()
         {
             return "Nome da materia: "+ Name + "\n" + "Ministrada por: " +
@@ -44,8 +46,8 @@ namespace SchoolLib
 
             SchoolClass other = (SchoolClass) obj;
 
-            if(other.Name == this.Name && other.Teacher.Equals(this.Teacher)
-               && other.Students.SequenceEqual(this.Students))
+            if(other.Name == this.Name && this.Teacher.Equals(other.Teacher)
+               && this.Students.SequenceEqual(other.Students))
                 return true;
 
             return false;
